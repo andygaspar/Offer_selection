@@ -1,2 +1,2 @@
-def initial_costs(flights):
-    return sum([flight.costVect[flight.eta] for flight in flights])
+def sum_costs(flights, initial=True):
+    return sum([flight.costVect[flight.index if initial else flight.sol] for flight in flights])
