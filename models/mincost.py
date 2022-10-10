@@ -4,7 +4,7 @@ from gurobipy import GRB, quicksum
 from objects.functions import sum_costs
 
 
-class Min_cost:
+class MinCost:
 
     def __init__(self, flights, airlines, indexes, new_slot_times, nnb=False):
         self.p = gb.Model()
